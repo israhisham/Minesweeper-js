@@ -1,0 +1,173 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+  font-family: 'MinesweeperFont';
+  src: url('fonts/Minesweeper.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+body{
+    font-family: 'MinesweeperFont', Courier, monospace;
+    font-weight: 800;
+    font-size: 1.8em;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: rgb(70, 69, 69);
+    text-transform: uppercase;
+}
+
+h1{
+    color: #FFFF;
+    padding-top: 20px;
+}
+
+.container {
+    padding-top: 2%; 
+    width: 500px;
+    text-align: center;
+    margin: auto;
+}
+
+.gameGrid {
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(196, 196, 196);
+    border: 3px solid  rgb(123, 123, 123);
+    border-collapse: collapse;
+}
+
+.gameGrid div {
+    font-size: 24px;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.safe,
+.bomb {
+    width: 40px;
+    height: 40px;
+    border: 5px solid rgb(123, 123, 123);
+    border-color: #FFFF rgb(123, 123, 123) rgb(123, 123, 123) #FFFF;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+.safe:active,
+.bomb:active {
+    transform: scale(0.9);
+}
+
+.checked {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid rgb(90, 90, 90);
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+.one {
+    color: blue;
+}
+
+.two {
+    color: green;
+}
+
+.three {
+    color: red;
+}
+
+.four {
+    color: darkblue;
+}
+
+.five {
+    color: rgb(12, 172, 172);
+}
+
+.six {
+    color: teal;
+}
+
+.seven{
+color: blueviolet;
+}
+
+.eight{
+color: orange;
+}
+
+svg, img{
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 400px) {
+body{
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container {
+    padding-top: 2%; 
+    width: 400px;
+    text-align: center;
+    margin: auto;
+}
+.gameGrid {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(196, 196, 196);
+    border: 3px solid  rgb(123, 123, 123);
+    border-collapse: collapse;
+}
+
+.gameGrid div {
+    font-size: 18px;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.safe,
+.bomb {
+    width: 30px;
+    height: 30px;
+    border: 5px solid rgb(123, 123, 123);
+    border-color: #FFFF rgb(123, 123, 123) rgb(123, 123, 123) #FFFF;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+.safe:active,
+.bomb:active {
+    transform: scale(0);
+}
+
+.checked {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 2px solid rgb(90, 90, 90);
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+}
