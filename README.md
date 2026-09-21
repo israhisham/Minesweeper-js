@@ -1,3 +1,5 @@
+https://israhisham.github.io/Minesweeper-js/
+
 Classic 10×10 Minesweeper grid with 20 randomly placed bombs; auto-reveal: clicking an empty cell automatically reveals all connected empty cells
 Flag system to mark bombs
 Win/loss detection with a game-over reveal of all bombs
